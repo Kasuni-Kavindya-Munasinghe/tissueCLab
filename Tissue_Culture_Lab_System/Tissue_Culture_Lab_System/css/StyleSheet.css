@@ -1,2 +1,374 @@
-﻿body {
+﻿/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+
+
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+    /* Style the sidenav links and the dropdown button */
+    .sidenav a, .dropdown-btn {
+        border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        background: none;
+        width: 101%;
+        text-align: left;
+        cursor: pointer;
+        outline: none;
+    height: 49px;
+    margin-right: 0px;
+}
+
+        /* On mouse-over */
+        .sidenav a:hover, .dropdown-btn:hover {
+            color: #f1f1f1;
+            background-color: green;
+        }
+
+/* Main content */
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+    background-color: #a9e898;
+}
+
+.main, h1 {
+    text-align: center;
+}
+
+.main, h2 {
+    text-align: center;
+}
+
+
+
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display:block;
+    background-color: #262626;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+    width: 17px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 18px;
+        }
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    
+}
+
+    .active, .accordion:hover {
+        background-color: #ccc;
+    }
+
+.panel {
+    padding:10px 30px 0 30px;
+    text-align:left;
+}
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 20px;
+    margin:5px 5px 0 5px;
+    border: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+    height: 5px;
+}
+
+/* Style the label to display next to the inputs */
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    height: 5px;
+    width: 212px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    float:right;
+    height: 40px;
+    width: 250px;
+}
+
+/* Style the container */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+    float: left;
+    width: 47%;
+    margin-top: 6px;
+    height: 55px;
+}
+
+/* Floating column for inputs: 50% width */
+.col-75 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.Rnd2column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    
+}
+
+/* Clear floats after the columns */
+.Rnd2row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* ----Timeline---- */
+.wrapper {
+    max-width: 1080px;
+    height: 100%;
+    margin: 50px auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+    /* Vertical Line */
+    .wrapper .vertical-line {
+        position: absolute;
+        height: 100%;
+        width: 4px;
+        background-color: #fff;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    /* Cards */
+    .wrapper .row {
+        display: flex;
+    }
+
+    .wrapper .sec1 {
+        justify-content: flex-start;
+    }
+
+    .wrapper .sec2 {
+        justify-content: flex-end;
+    }
+
+    .wrapper .row section {
+        background-color: rgba(172, 246, 219, 0.77);
+        border-radius: 5px;
+        width: calc(50% - 40px);
+        padding: 20px;
+        position: relative;
+    }
+
+        /* Card Connector */
+        .wrapper .row section::before {
+            content: '';
+            position: absolute;
+            height: 10px;
+            width: 40px;
+            background-color: #111;
+            top: 0;
+            border-radius: 5px;
+            z-index: -1;
+        }
+
+.sec1 section::before {
+    right: -30px;
+}
+
+.sec2 section::before {
+    left: -30px;
+}
+
+/* Card Icon & Scroll Icon */
+.row section > i,
+.vertical-line .scroll {
+    position: absolute;
+    background-color:green;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    border: 2px #fff solid;
+}
+
+.sec1 section > i {
+    right: -60px;
+    top: 10px;
+}
+
+.sec2 section > i {
+    left: -60px;
+    top: 10px;
+}
+
+.vertical-line .scroll {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Card Body */
+.row section p {
+    line-height: 25px;
+    border: 2px #04AA6D solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.row section .details,
+.row section .bottom {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 0;
+}
+
+    .row section .details .title {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .row section .details span:nth-child(2) {
+        background-color: green;
+        color: #fff;
+        margin-left: 20px;
+        padding: 3px 5px;
+        font-size: 0.9rem;
+        border-radius: 5px;
+    }
+
+    .row section .bottom a {
+        background-color: green;
+        color: #fff;
+        padding: 8px 15px;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .row section .bottom i {
+        margin-left: 5px;
+    }
+
+/* ----Responsive---- */
+@media(max-width: 750px) {
+    /* Vertical Line */
+    .wrapper .vertical-line {
+        left: 40px;
+    }
+
+    /* Cards */
+    .wrapper .row {
+        margin: 30px 0 3px 60px;
+    }
+
+        .wrapper .row section {
+            width: 100%;
+        }
+
+    /* Card Coonector */
+    .sec1 section::before {
+        left: -30px;
+    }
+
+    /* Card Icon */
+    .sec1 section > i {
+        left: -60px;
+    }
+}
+
+@media(max-width: 510px) {
+    /* Card Body */
+    .row section p,
+    .row section .bottom a,
+    .row section .bottom i {
+        font-size: 0.7rem;
+    }
+
+    .row section .details .title {
+        font-size: 1rem;
+    }
+
+    .row section .details span:nth-child(2) {
+        font-size: 0.6rem;
+    }
 }
