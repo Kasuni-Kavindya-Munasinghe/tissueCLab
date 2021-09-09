@@ -5,6 +5,7 @@
 <html>
 <head runat="server">
     <title></title>
+
     
     <%--bootstrap css--%>
     <link href="Boostrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -12,30 +13,79 @@
     <link href="Datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
     <%--fontawsome css--%>
     <link href="fontawesome/css/all.css" rel="stylesheet" />
-    <%--bootstrap css--%>
+    <%--bootstrap js--%>
     <script src="Boostrap/js/bootstrap.bundle.min.js"></script>
     <script src="Boostrap/js/popper.min.js"></script>
     <script src="Boostrap/js/bootstrap.min.js"></script>
     
+    <%--css--%>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <h1>head</h1>
     <form id="form1" runat="server">
-        <div>
+        <div >
+
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-             <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+             <asp:ContentPlaceHolder ID="PrepUContentPlaceHolder2" runat="server">
             </asp:ContentPlaceHolder>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            <asp:ContentPlaceHolder ID="PrepUContentPlaceHolder3" runat="server">
             </asp:ContentPlaceHolder>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+            <asp:ContentPlaceHolder ID="PrepUContentPlaceHolder4" runat="server">
             </asp:ContentPlaceHolder>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder5" runat="server">
+            <asp:ContentPlaceHolder ID="PrepUContentPlaceHolder5" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+        <br /><br /><br />
+
+
+
+
+
+
+
+        <!-- Footer -->
+        <footer>
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                          
+                            <asp:LinkButton class="footerlinks" ID="LinkButton11" runat="server">Sales Management</asp:LinkButton>
+                            &nbsp
+                            <asp:LinkButton class="footerlinks" ID="LinkButton12" runat="server">HR Management</asp:LinkButton>
+                            &nbsp
+                            <asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server">R&D Management</asp:LinkButton>
+                            &nbsp
+                            <asp:LinkButton class="footerlinks" ID="LinkButton9" runat="server">Production Management</asp:LinkButton>
+                            &nbsp
+                             <asp:LinkButton class="footerlinks" ID="LinkButton10" runat="server">Media Preperation Unit</asp:LinkButton>
+                            &nbsp
+                            <asp:LinkButton class="footerlinks" ID="LinkButton5" runat="server">Growth Room</asp:LinkButton>
+                            &nbsp
+                            <asp:LinkButton class="footerlinks" ID="LinkButton13" runat="server">Delivery Management</asp:LinkButton>
+                            &nbsp
+                             <asp:LinkButton class="footerlinks" ID="LinkButton14" runat="server">Inventory Management</asp:LinkButton>
+
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="footer2" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p style="color:whitesmoke">&copy All right Reserved -   <a class="footerlinks" href="#" target="_blank"> Serendib Horticulture Technology (Pvt)Ltd  </a></p>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
     </form>
-    <h1>footer</h1>
+    
 </body>
 </html>
