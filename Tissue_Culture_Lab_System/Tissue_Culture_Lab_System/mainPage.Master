@@ -5,15 +5,37 @@
 <html>
 <head runat="server">
     <title></title>
+    
+    <%--bootstrap css--%>
+    <link href="Boostrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--datatables css --%>
+    <link href="Datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%--fontawsome css--%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+    <%--bootstrap css--%>
+    <script src="Boostrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Boostrap/js/popper.min.js"></script>
+    <script src="Boostrap/js/bootstrap.min.js"></script>
+    
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
+    <h1>head</h1>
     <form id="form1" runat="server">
         <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <asp:ContentPlaceHolder ID="PrepUContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+             <asp:ContentPlaceHolder ID="PrepUContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="PrepUContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="PrepUContentPlaceHolder4" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="PrepUContentPlaceHolder5" runat="server">
             </asp:ContentPlaceHolder>
         </div>
     </form>
+    <h1>footer</h1>
 </body>
 </html>

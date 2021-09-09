@@ -72,6 +72,11 @@
     <Content Include="Boostrap\js\bootstrap.min.js" />
     <Content Include="Boostrap\js\popper.min.js" />
     <Content Include="content folder\hi.txt" />
+    <Content Include="content folder\PrepUForm1.aspx" />
+    <Content Include="content folder\PrepUForm3.aspx" />
+    <Content Include="content folder\PrepUFrom2.aspx" />
+    <Content Include="content folder\PrepUmenu1.aspx" />
+    <Content Include="content folder\PrepUmenu2.aspx" />
     <Content Include="css\StyleSheet.css" />
     <Content Include="Datatables\css\jquery.dataTables.min.css" />
     <Content Include="Datatables\js\jquery.dataTables.min.js" />
@@ -1723,10 +1728,64 @@
     <Content Include="fontawesome\webfonts\fa-regular-400.svg" />
     <Content Include="fontawesome\webfonts\fa-solid-900.svg" />
     <Content Include="Image\logo.png" />
+    <Content Include="Image\perpu8 - Copy.png" />
+    <Content Include="Image\PrepU1.jpg" />
+    <Content Include="Image\PrepU2.jpg" />
+    <Content Include="Image\PrepU4.jpg" />
+    <Content Include="Image\prepU5.jpg" />
+    <Content Include="Image\PrepU6.jpg" />
+    <Content Include="Image\prepu7.jpg" />
+    <Content Include="Image\prepu9.png" />
+    <Content Include="Image\prepUdelete.png" />
+    <Content Include="Image\PrepUup.png" />
+    <Content Include="Image\PrepUv.png" />
+    <Content Include="Image\Vertical-Line-PNG-Free-Download.png" />
     <Content Include="js\JavaScript.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="content folder\PrepUForm1.aspx.cs">
+      <DependentUpon>PrepUForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\PrepUForm1.aspx.designer.cs">
+      <DependentUpon>PrepUForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\PrepUForm3.aspx.cs">
+      <DependentUpon>PrepUForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\PrepUForm3.aspx.designer.cs">
+      <DependentUpon>PrepUForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\PrepUFrom2.aspx.cs">
+      <DependentUpon>PrepUFrom2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\PrepUFrom2.aspx.designer.cs">
+      <DependentUpon>PrepUFrom2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\PrepUmenu1.aspx.cs">
+      <DependentUpon>PrepUmenu1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\PrepUmenu1.aspx.designer.cs">
+      <DependentUpon>PrepUmenu1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\PrepUmenu2.aspx.cs">
+      <DependentUpon>PrepUmenu2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\PrepUmenu2.aspx.designer.cs">
+      <DependentUpon>PrepUmenu2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainPage.Master.cs">
+      <DependentUpon>mainPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainPage.Master.designer.cs">
+      <DependentUpon>mainPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1784,6 +1843,7 @@
     <Content Include="fontawesome\webfonts\fa-solid-900.ttf" />
     <Content Include="fontawesome\webfonts\fa-solid-900.woff" />
     <Content Include="fontawesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="mainPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
