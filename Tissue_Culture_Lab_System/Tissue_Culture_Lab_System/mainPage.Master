@@ -5,14 +5,45 @@
 <html>
 <head runat="server">
     <title></title>
+     <%--bootstrap css  --%>
+    <link href="Boostrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <%--datatables css --%>
+    <link href="Datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    
+    <%--fontawesome css --%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <asp:ContentPlaceHolder ID="pdmContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+
+             <asp:ContentPlaceHolder ID="pdmContentPlaceHolder2" runat="server">
+              </asp:ContentPlaceHolder>
+
+           <asp:ContentPlaceHolder ID="pdmContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+
+             <asp:ContentPlaceHolder ID="pdmContentPlaceHolder4" runat="server">
+             </asp:ContentPlaceHolder>
+           
+            <asp:ContentPlaceHolder ID="pdmContentPlaceHolder5" runat="server">
+             </asp:ContentPlaceHolder>
+
+             <asp:ContentPlaceHolder ID="pdmContentPlaceHolder6" runat="server">
+             </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="pdmContentPlaceHolder7" runat="server">
+             </asp:ContentPlaceHolder>
+
+            <asp:ContentPlaceHolder ID="pdmContentPlaceHolder8" runat="server">
+             </asp:ContentPlaceHolder>
         </div>
     </form>
 </body>

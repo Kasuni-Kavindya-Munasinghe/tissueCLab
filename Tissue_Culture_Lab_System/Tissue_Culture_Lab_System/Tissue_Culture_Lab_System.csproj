@@ -72,6 +72,14 @@
     <Content Include="Boostrap\js\bootstrap.min.js" />
     <Content Include="Boostrap\js\popper.min.js" />
     <Content Include="content folder\hi.txt" />
+    <Content Include="content folder\pdmAddBottleDetails.aspx" />
+    <Content Include="content folder\pdmCreatePlan.aspx" />
+    <Content Include="content folder\pdmGetPlantBottleDetails.aspx" />
+    <Content Include="content folder\pdmGetVarietyIns.aspx" />
+    <Content Include="content folder\pdmHomePage.aspx" />
+    <Content Include="content folder\pdmUpdateDeletePlan.aspx" />
+    <Content Include="content folder\PdmViewBottle.aspx" />
+    <Content Include="content folder\pdmViewPlan.aspx" />
     <Content Include="css\StyleSheet.css" />
     <Content Include="Datatables\css\jquery.dataTables.min.css" />
     <Content Include="Datatables\js\jquery.dataTables.min.js" />
@@ -1722,11 +1730,81 @@
     <Content Include="fontawesome\webfonts\fa-brands-400.svg" />
     <Content Include="fontawesome\webfonts\fa-regular-400.svg" />
     <Content Include="fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Image\Add palnd det.jpg" />
+    <Content Include="Image\bootle2.jpg" />
+    <Content Include="Image\create-png-icon-1-Transparent-Images.png" />
+    <Content Include="Image\download.jpg" />
     <Content Include="Image\logo.png" />
+    <Content Include="Image\tissue cultue Lab.png" />
+    <Content Include="Image\verticle line png.png" />
+    <Content Include="Image\verticle line.png" />
     <Content Include="js\JavaScript.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="content folder\pdmAddBottleDetails.aspx.cs">
+      <DependentUpon>pdmAddBottleDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\pdmAddBottleDetails.aspx.designer.cs">
+      <DependentUpon>pdmAddBottleDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\pdmCreatePlan.aspx.cs">
+      <DependentUpon>pdmCreatePlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\pdmCreatePlan.aspx.designer.cs">
+      <DependentUpon>pdmCreatePlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\pdmGetPlantBottleDetails.aspx.cs">
+      <DependentUpon>pdmGetPlantBottleDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\pdmGetPlantBottleDetails.aspx.designer.cs">
+      <DependentUpon>pdmGetPlantBottleDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\pdmGetVarietyIns.aspx.cs">
+      <DependentUpon>pdmGetVarietyIns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\pdmGetVarietyIns.aspx.designer.cs">
+      <DependentUpon>pdmGetVarietyIns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\pdmHomePage.aspx.cs">
+      <DependentUpon>pdmHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\pdmHomePage.aspx.designer.cs">
+      <DependentUpon>pdmHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\pdmUpdateDeletePlan.aspx.cs">
+      <DependentUpon>pdmUpdateDeletePlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\pdmUpdateDeletePlan.aspx.designer.cs">
+      <DependentUpon>pdmUpdateDeletePlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\PdmViewBottle.aspx.cs">
+      <DependentUpon>PdmViewBottle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\PdmViewBottle.aspx.designer.cs">
+      <DependentUpon>PdmViewBottle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\pdmViewPlan.aspx.cs">
+      <DependentUpon>pdmViewPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\pdmViewPlan.aspx.designer.cs">
+      <DependentUpon>pdmViewPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainPage.Master.cs">
+      <DependentUpon>mainPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainPage.Master.designer.cs">
+      <DependentUpon>mainPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1784,6 +1862,7 @@
     <Content Include="fontawesome\webfonts\fa-solid-900.ttf" />
     <Content Include="fontawesome\webfonts\fa-solid-900.woff" />
     <Content Include="fontawesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="mainPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

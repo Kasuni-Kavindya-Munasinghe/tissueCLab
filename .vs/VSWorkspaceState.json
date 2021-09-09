@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Tissue_Culture_Lab_System",
+    "\\Tissue_Culture_Lab_System\\Tissue_Culture_Lab_System",
+    "\\Tissue_Culture_Lab_System\\Tissue_Culture_Lab_System\\Boostrap\\js",
+    "\\Tissue_Culture_Lab_System\\Tissue_Culture_Lab_System\\content folder"
   ],
+  "SelectedNode": "\\Tissue_Culture_Lab_System\\Tissue_Culture_Lab_System\\mainPage.Master",
   "PreviewInSolutionExplorer": false
 }
