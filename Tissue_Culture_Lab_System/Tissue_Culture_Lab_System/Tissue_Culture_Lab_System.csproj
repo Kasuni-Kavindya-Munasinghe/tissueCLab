@@ -71,7 +71,12 @@
     <Content Include="Boostrap\js\bootstrap.bundle.min.js" />
     <Content Include="Boostrap\js\bootstrap.min.js" />
     <Content Include="Boostrap\js\popper.min.js" />
+    <Content Include="content folder\emloyeeDetailsUpdate.aspx" />
+    <Content Include="content folder\employeeRequestPage.aspx" />
+    <Content Include="content folder\employyeeDetailsAdd.aspx" />
+    <Content Include="content folder\empolyProfile.aspx" />
     <Content Include="content folder\hi.txt" />
+    <Content Include="content folder\userProfileAdmin.aspx" />
     <Content Include="css\StyleSheet.css" />
     <Content Include="Datatables\css\jquery.dataTables.min.css" />
     <Content Include="Datatables\js\jquery.dataTables.min.js" />
@@ -1722,11 +1727,54 @@
     <Content Include="fontawesome\webfonts\fa-brands-400.svg" />
     <Content Include="fontawesome\webfonts\fa-regular-400.svg" />
     <Content Include="fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Image\employeePro.jpg" />
     <Content Include="Image\logo.png" />
     <Content Include="js\JavaScript.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="content folder\emloyeeDetailsUpdate.aspx.cs">
+      <DependentUpon>emloyeeDetailsUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\emloyeeDetailsUpdate.aspx.designer.cs">
+      <DependentUpon>emloyeeDetailsUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\employeeRequestPage.aspx.cs">
+      <DependentUpon>employeeRequestPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\employeeRequestPage.aspx.designer.cs">
+      <DependentUpon>employeeRequestPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\employyeeDetailsAdd.aspx.cs">
+      <DependentUpon>employyeeDetailsAdd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\employyeeDetailsAdd.aspx.designer.cs">
+      <DependentUpon>employyeeDetailsAdd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\empolyProfile.aspx.cs">
+      <DependentUpon>empolyProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\empolyProfile.aspx.designer.cs">
+      <DependentUpon>empolyProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\userProfileAdmin.aspx.cs">
+      <DependentUpon>userProfileAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\userProfileAdmin.aspx.designer.cs">
+      <DependentUpon>userProfileAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainPage.Master.cs">
+      <DependentUpon>mainPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainPage.Master.designer.cs">
+      <DependentUpon>mainPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -1784,6 +1832,7 @@
     <Content Include="fontawesome\webfonts\fa-solid-900.ttf" />
     <Content Include="fontawesome\webfonts\fa-solid-900.woff" />
     <Content Include="fontawesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="mainPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

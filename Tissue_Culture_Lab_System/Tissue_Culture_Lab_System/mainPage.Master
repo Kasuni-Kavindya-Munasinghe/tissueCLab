@@ -5,10 +5,23 @@
 <html>
 <head runat="server">
     <title></title>
+
+    <%--bootstrap css--%>
+    <link href="Boostrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--datatables css--%>
+    <link href="Datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+     <%--fontawesome css--%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+      <%--our project css--%>
+    <link href="css/StyleSheet.css" rel="stylesheet" />
+    <%--jquery--%>
+
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
+  
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

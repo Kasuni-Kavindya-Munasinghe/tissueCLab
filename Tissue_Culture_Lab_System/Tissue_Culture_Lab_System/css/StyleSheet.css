@@ -1,2 +1,178 @@
-﻿body {
+﻿
+.hrbtn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 450px;
+    padding: 7px;
+}
+/*employ profile*/
+.hrprofiletag {
+    background-color: #66cc00;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 5px;
+}
+.hrUserabout {
+    
+    width: 50%;
+    margin-left:5%;
+}
+.hrProfileBtnSet {
+    position: absolute;
+    top: 350px;
+    right: 15%;
+
+    
+}
+.hrEmployeProfilePlaceHolder {
+   
+    height: 170px;
+    width: 170px;
+    position: absolute;
+    top: -200px;
+    right: 15%;
+   
+   
+}
+.hrEmpProfile {
+    border: 5px outset black;
+    height: 150px;
+    width: 150px;
+}
+.hrprofilebtn1 {
+    background-color: #408000; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 250px;
+    padding: 7px;
+}
+/*Employee details table*/
+.hrEmpolyAboutTable th, td {
+    border: none;
+    font-size: 16px;
+}
+/*user profile admin page*/
+.hrtable {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+.requestView {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 70px;
+    padding: 5px;
+}
+
+tr:hover {
+    background-color: yellow;
+}
+.hrAdminBody1 {
+    position: absolute;
+    width: 50%;
+    left:10px;
+}
+.hrAdminBody2 {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    width: 40%;
+    height: 100px;
+}
+/*Serch emoloyee details*/
+.hrSerchEmployee {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 300px;
+    padding: 7px;
+}
+/*new member add button*/
+.hraddNewmember {
+    position: absolute;
+    left: 150px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #408000;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 6px;
+    width: 400px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.hraddNewmember span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+}
+
+.hraddNewmember span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.hraddNewmember:hover span {
+        padding-right: 25px;
+
+}
+
+.hraddNewmember:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.hrvl {
+    border-left: 6px solid green;
+    height: 500px;
+    position: absolute;
+    left: 55%;
+    margin-left: -3px;
+    top: 0;
 }
