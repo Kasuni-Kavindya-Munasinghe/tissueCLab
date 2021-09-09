@@ -71,7 +71,12 @@
     <Content Include="Boostrap\js\bootstrap.bundle.min.js" />
     <Content Include="Boostrap\js\bootstrap.min.js" />
     <Content Include="Boostrap\js\popper.min.js" />
+    <Content Include="content folder\CreateDeliveryJobProfile.aspx" />
+    <Content Include="content folder\DeliveryHome.aspx" />
+    <Content Include="content folder\DeliveryHomepage.html" />
     <Content Include="content folder\hi.txt" />
+    <Content Include="content folder\ViewDeliveryProfile.aspx" />
+    <Content Include="content folder\ViewDeliveryProfileMain.aspx" />
     <Content Include="css\StyleSheet.css" />
     <Content Include="Datatables\css\jquery.dataTables.min.css" />
     <Content Include="Datatables\js\jquery.dataTables.min.js" />
@@ -1722,12 +1727,60 @@
     <Content Include="fontawesome\webfonts\fa-brands-400.svg" />
     <Content Include="fontawesome\webfonts\fa-regular-400.svg" />
     <Content Include="fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="Image\DMimg5.jpg" />
+    <Content Include="Image\DMimg1.png" />
+    <Content Include="Image\DMimg2.jpg" />
+    <Content Include="Image\DMimg3.png" />
     <Content Include="Image\logo.png" />
+    <Content Include="Image\DMimg4.jpg" />
     <Content Include="js\JavaScript.js" />
+    <Content Include="content folder\ViewOrders.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="content folder\CreateDeliveryJobProfile.aspx.cs">
+      <DependentUpon>CreateDeliveryJobProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\CreateDeliveryJobProfile.aspx.designer.cs">
+      <DependentUpon>CreateDeliveryJobProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\DeliveryHome.aspx.cs">
+      <DependentUpon>DeliveryHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\DeliveryHome.aspx.designer.cs">
+      <DependentUpon>DeliveryHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\ViewDeliveryProfile.aspx.cs">
+      <DependentUpon>ViewDeliveryProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\ViewDeliveryProfile.aspx.designer.cs">
+      <DependentUpon>ViewDeliveryProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\ViewDeliveryProfileMain.aspx.cs">
+      <DependentUpon>ViewDeliveryProfileMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\ViewDeliveryProfileMain.aspx.designer.cs">
+      <DependentUpon>ViewDeliveryProfileMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="mainPage.Master.cs">
+      <DependentUpon>mainPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="mainPage.Master.designer.cs">
+      <DependentUpon>mainPage.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="content folder\ViewOrders.aspx.cs">
+      <DependentUpon>ViewOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\ViewOrders.aspx.designer.cs">
+      <DependentUpon>ViewOrders.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="fontawesome\less\brands.less" />
@@ -1784,6 +1837,7 @@
     <Content Include="fontawesome\webfonts\fa-solid-900.ttf" />
     <Content Include="fontawesome\webfonts\fa-solid-900.woff" />
     <Content Include="fontawesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="mainPage.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
