@@ -42,7 +42,7 @@
         }
     </style>
 </asp:Content>
-<asp:Content ID="PrepUContent2" ContentPlaceHolderID="PrepUContentPlaceHolder1" runat="server">
+<asp:Content ID="PrepUContent2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <%--navigation ber--%> 
     <section style="background-color:forestgreen; color:white;">
       <center><h2>Preparation Unit</h2></center> 
@@ -87,13 +87,6 @@
             </td>
       </tr>
         
-    </table>
-   
-
-   
-
-             
-        
-      
+    </table>    
      
 </asp:Content>

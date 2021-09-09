@@ -77,6 +77,7 @@
     <Content Include="content folder\PrepUFrom2.aspx" />
     <Content Include="content folder\PrepUmenu1.aspx" />
     <Content Include="content folder\PrepUmenu2.aspx" />
+    <Content Include="content folder\start1.aspx" />
     <Content Include="css\StyleSheet.css" />
     <Content Include="Datatables\css\jquery.dataTables.min.css" />
     <Content Include="Datatables\js\jquery.dataTables.min.js" />
@@ -1778,6 +1779,13 @@
     </Compile>
     <Compile Include="content folder\PrepUmenu2.aspx.designer.cs">
       <DependentUpon>PrepUmenu2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="content folder\start1.aspx.cs">
+      <DependentUpon>start1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="content folder\start1.aspx.designer.cs">
+      <DependentUpon>start1.aspx</DependentUpon>
     </Compile>
     <Compile Include="mainPage.Master.cs">
       <DependentUpon>mainPage.Master</DependentUpon>

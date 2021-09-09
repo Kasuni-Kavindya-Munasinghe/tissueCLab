@@ -88,11 +88,11 @@
         }
         </style>
 </asp:Content>
-<asp:Content ID="PrepUContent1" ContentPlaceHolderID="PrepUContentPlaceHolder1" runat="server">
+<asp:Content ID="PrepUContent1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
-<asp:Content ID="PrepUContent2" ContentPlaceHolderID="PrepUContentPlaceHolder2" runat="server">
+<asp:Content ID="PrepUContent2" ContentPlaceHolderID="ContentPlaceHolder2" runat="server">
 </asp:Content>
-<asp:Content ID="PrepUContent3" ContentPlaceHolderID="PrepUContentPlaceHolder3" runat="server">
+<asp:Content ID="PrepUContent3" ContentPlaceHolderID="ContentPlaceHolder3" runat="server">
   <%--Content placholder 3 start --%>
      <%--preparation unit navbar --%>
     <section style="background-color:forestgreen; color:white;">
