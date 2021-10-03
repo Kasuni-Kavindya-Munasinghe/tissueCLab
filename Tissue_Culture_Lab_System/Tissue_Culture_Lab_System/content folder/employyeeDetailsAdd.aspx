@@ -5,15 +5,9 @@
     <div class="container">
       <div class="row">
          <div class="col-md-8 mx-auto">
-            <div class="card">
+            <div class="card" style="background-color:rgba(164, 164, 164, 0.33)">
                <div class="card-body">
-                  <div class="row">
-                     <div class="col">
-                        <center>
-                           <img width="150px" src="imgs/generaluser.png"/>
-                        </center>
-                     </div>
-                  </div>
+                  
                   <div class="row" >
                      <div class="col">
                         <center>
@@ -124,22 +118,24 @@
                    <div class="row">
                      <div class="col-8 mx-auto">
                         <center>
-                           <div class="form-group">
-                                <button class="hrbtn">Submit</button>
+                           
+                             <div class="form-group">
+                           <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" Text="Submit " OnClick="Button1_Click" />
+                                  <br><br>
                             
-                           </div>
+                          
                         </center>
                      </div>
                   </div>
-                       
+                      
                        
                    
                </div>
             </div>
-           
+            <br><br>
          </div>
       </div>
    </div>
-
+     <br><br>
    
 </asp:Content>
