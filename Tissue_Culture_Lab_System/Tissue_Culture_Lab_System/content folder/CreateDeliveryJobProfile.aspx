@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/mainPage.Master" AutoEventWireup="true" CodeBehind="CreateDeliveryJobProfile.aspx.cs" Inherits="Tissue_Culture_Lab_System.content_folder.CreateDeliveryJobProfile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<asp:Content ID="Content2" ContentPlaceHolderID="DeliveryContentPlaceHolder1" runat="server">
     <style>
 
 /*page layout*/
@@ -11,15 +11,14 @@
 
 .left {
     flex: 20%;
-    
+    padding: 15px ;
 
-    border: 10px solid lightgreen;
-    border-radius: 10  px;
+   
 }
 
 .right {
     flex: 80%;
-     
+    padding: 15px ; 
 }
 p.round3 {
             border: 5px solid green;
@@ -29,16 +28,22 @@ p.round3 {
 hr.new2 {
   border-top: 5px solid red;
 }
+.b1{  
+           background-color: lightblue;  
+           border:5px red double;       
+           border-radius: 25px;  
+           color:black;  
+           box-shadow : 0 8px 16px 0 black,   
+                    0 6px 20px  0 rgba(0, 0, 0, 0.19);   
+        }  
 </style>
         <!-- Page content -->
 <div class="page" style="background-color:lightgrey;">
     <div class="left" id="center" >   
         <ul id="Dp" box-sizing: border-box;>
                         <li><a href="DeliveryHome.aspx" ><center><i class='fas fa-house-user' style='font-size:30px;'><font id="font"><br />Home </font></i></center></a></li>
-                        <li><a href="CreateDeliveryJobProfile.aspx" ><center><i class='fas fa-file-signature' style='font-size:30px;'><font id="font"><br />Create New Job Profile </font></i></center></a></li>
-                        <li><a href="ViewDeliveryProfileMain.aspx" ><center><i class='fas fa-file-export' style='font-size:30px;'><font id="font"><br />View job Profiles </font></i></center></a></li>
-                        <li><a href="ViewOrders.aspx" ><center><i class='fas fa-download' style='font-size:48px;'><font id="font"><br />View Orders </font></i></center></a></li>
-                    </ul>
+                        <li><a href="CreateDeliveryJobProfile.aspx" class ="b1"><center><i class='fas fa-file-signature' style='font-size:30px;'><font id="font"><br />Create New Job Profile </font></i></center></a></li>
+        </ul>
     </div>
     <div class="right"  >
     
@@ -94,7 +99,7 @@ hr.new2 {
                                 <div class="col-md-6">
                                     <label>Delivery Profile ID</label>
                                     <div class="form-group">
-                                        <asp:TextBox CssClass="form-control" id="TextBox2" runat="server" placeholder="Delivery Profile ID"></asp:TextBox>
+                                        <asp:TextBox CssClass="form-control" id="TextBox2" runat="server" placeholder="Delivery Profile ID" ></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -112,7 +117,7 @@ hr.new2 {
                                 <div class="col-md-6">
                                     <label>Customer Contact No</label>
                                     <div class="form-group">
-                                        <asp:TextBox CssClass="form-control" id="TextBox5" runat="server" placeholder="Contact No" TextMode="Phone"></asp:TextBox>
+                                        <asp:TextBox CssClass="form-control" id="TextBox5" runat="server" placeholder="Contact No" TextMode="Phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></asp:TextBox>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -132,11 +137,11 @@ hr.new2 {
                                     <div class="form-group">
                                         <asp:DropDownList Class="form-control" id="DropDownList1" runat="server" >
                                             <asp:ListItem Text="Select" Value="select" />
-                                            <asp:ListItem Text="Iran" Value="Andhra Pradesh" />
-                                            <asp:ListItem Text="India" Value="Andhra Pradesh" />
-                                            <asp:ListItem Text="Japan" Value="Andhra Pradesh" />
-                                            <asp:ListItem Text="China" Value="Andhra Pradesh" />
-                                            <asp:ListItem Text="Ishrayel" Value="Andhra Pradesh" />
+                                            <asp:ListItem Text="Iran" Value="Iran" />
+                                            <asp:ListItem Text="India" Value="India" />
+                                            <asp:ListItem Text="Japan" Value="Japan" />
+                                            <asp:ListItem Text="China" Value="China" />
+                                            <asp:ListItem Text="Ishrayel" Value="Ishrayel" />
                                         </asp:DropDownList>
                                     </div>
                                 </div>
@@ -181,12 +186,12 @@ hr.new2 {
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                        <label>Country</label>
+                                        <label>Plant Created Lab</label>
                                         <div class="form-group">
                                             <asp:DropDownList Class="form-control" id="DropDownList2" runat="server" >
                                                 <asp:ListItem Text="Select" Value="select" />
-                                                <asp:ListItem Text="Iran" Value="Lab01" />
-                                                <asp:ListItem Text="India" Value="Lab02" />
+                                                <asp:ListItem Text="Lab01" Value="Lab01" />
+                                                <asp:ListItem Text="Lab02" Value="Lab02" />
                                             </asp:DropDownList>
                                         </div>
                                 </div>
@@ -255,12 +260,19 @@ hr.new2 {
                                 </div>
                             </div>
                         
-                                <div class="card">
+                            <div class="card">
                                     <!-- Day 01 -->
                                     <div class="card-body">
                                         <div class="col">
                                             <div class="row">
-                                            
+                                                <div class="row">
+                                                    <center>
+                                                    <label>Delivery Profile ID</label>
+                                                    <div class="form-group">
+                                                        <asp:TextBox CssClass="form-control" id="TextBox39" runat="server" placeholder="Delivery Profile ID" ></asp:TextBox>
+                                                    </div>
+                                                    </center>
+                                                </div>
                                                 <div class="row">
                                                     <div class="col">
                                                     <center>
@@ -268,6 +280,7 @@ hr.new2 {
                                                     </center>
                                                     </div>
                                                 </div>
+                                                
                                                 <div class="col-md-6">
                                                     <label>Date</label>
                                                         <div class="form-group">
@@ -311,6 +324,7 @@ hr.new2 {
                                                     </center>
                                                     </div>
                                                 </div>
+                                                
                                                 <div class="col-md-6">
                                                     <label>Date</label>
                                                         <div class="form-group">
@@ -354,6 +368,7 @@ hr.new2 {
                                                     </center>
                                                     </div>
                                                 </div>
+                                                
                                                 <div class="col-md-6">
                                                     <label>Date</label>
                                                         <div class="form-group">
@@ -397,6 +412,7 @@ hr.new2 {
                                                     </center>
                                                     </div>
                                                 </div>
+                                                
                                                 <div class="col-md-6">
                                                     <label>Date</label>
                                                         <div class="form-group">
@@ -440,6 +456,7 @@ hr.new2 {
                                                     </center>
                                                     </div>
                                                 </div>
+                                                
                                                 <div class="col-md-6">
                                                     <label>Date</label>
                                                         <div class="form-group">
@@ -483,6 +500,7 @@ hr.new2 {
                                                     </center>
                                                     </div>
                                                 </div>
+                                               
                                                 <div class="col-md-6">
                                                     <label>Date</label>
                                                         <div class="form-group">
@@ -514,7 +532,7 @@ hr.new2 {
                                         </div>
                                     </div> 
                                     <!-- Day 06 -->
-                                </div>
+                           </div>
                 <!-- Plant Packing plan Section -->
                 <!-- Delivery Details Section -->
                             <div class="row">
@@ -557,24 +575,20 @@ hr.new2 {
                                 <div class="col-md-6">
                                     <label>Shipment Status</label>
                                     <div class="form-group">
-                                        <label>Delivered</label>
-                                        <asp:RadioButton ID="RadioButton1" runat="server"  GroupName="ShipmentStatus"></asp:RadioButton>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>On Shipping</label>
-                                        <asp:RadioButton ID="RadioButton2" runat="server"  GroupName="ShipmentStatus"></asp:RadioButton>
+                                            <asp:DropDownList Class="form-control" id="DropDownList3" runat="server" >
+                                                <asp:ListItem Text="Delivered" Value="Delivered" />
+                                                <asp:ListItem Text="On Shipping" Value="On Shipping" />
+                                            </asp:DropDownList>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label>Storage Type</label>
-                                    <div class="form-group">
-                                        <label>Normal Storage</label>
-                                        <asp:RadioButton ID="RadioButton3" runat="server"  GroupName="StorageType"></asp:RadioButton>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Cold Storage</label>
-                                        <asp:RadioButton ID="RadioButton4" runat="server"  GroupName="StorageType"></asp:RadioButton>
-                                    </div>
+                                     <div class="form-group">
+                                            <asp:DropDownList Class="form-control" id="DropDownList4" runat="server" >
+                                                <asp:ListItem Text="Normal Storage" Value="Normal Storage" />
+                                                <asp:ListItem Text="Cold Storage" Value="Cold Storage" />
+                                            </asp:DropDownList>
+                                     </div>
                                 </div>
                             </div>
                 <!-- Delivery Details Section -->
@@ -587,21 +601,35 @@ hr.new2 {
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col">
-                                    <div class="form-group">
-                                    <center>
-                                        <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" Text="Create Delivery Job Profile" />
-                                    </center>
-                                    </div>
-                                </div>
+                                 
+                                     <div class="col">
+                                            <div class="form-group">
+                                                <center>
+                                                <asp:Button class="btn btn-success btn-block btn-lg" ID="Button1" runat="server" Text="Create Delivery Job Profile" OnClick="Button1_Click" />
+                                                </center>
+                                            </div>
+                                     </div>
+                                 
+                                
+                                 
                             </div>
-                <!-- Button Section -->
+
+                                
+
+                            </div>
                         </div>
+                <!-- Button Section -->
                     </div>
-                </div>
-            </div>
-        </div>
+                 </div>
+             </div>
         </div>
     </div>
+   
+        
+    
 </div>
+     <br />
+    <br />
+    <br />
+    
 </asp:Content>
