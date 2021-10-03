@@ -8,67 +8,92 @@
         width: 74%;
     }
     .auto-style3 {
-        width: 230px;
-        margin-left: 13px;
-    }
-    .auto-style4 {
-        width: 230px;
-        margin-left: 0px;
+        width: 220px;
+        margin-left: 21px;
     }
     .auto-style5 {
-        width: 230px;
+        width: 222px;
         margin-left: 7px;
     }
     .auto-style6 {
-        width: 230px;
+        width: 223px;
         margin-left: 14px;
     }
     .auto-style7 {
         width: 221px;
         margin-left: 0px;
     }
-</style>
+        .auto-style10 {
+            width: 65px;
+            margin-left: 10px;
+            height: 25px;
+        }
+        .auto-style11 {
+            width: 50px;
+            margin-left: 10px;
+            height: 21px;
+        }
+        .pdmb1{
+            background-color:darkorange;
+            width: 73px; 
+            margin-left: 157px;
+        }
+
+        .pdmb2{
+            background-color:coral; 
+            width: 67px; 
+            margin-left: 45px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="pdmContent2" ContentPlaceHolderID="pdmContentPlaceHolder1" runat="server">
-     <%--page title  --%>
-    <section style ="background-color:darkslateblue">
+     
+    <div  style=" background-image:url(../Image/bg.jpg);">
+    <%--page title  --%>
+    <section style ="background-color:darkslateblue; color:aliceblue;">
         <center>
         <h2> View bottle details</h2>
             </center>
     </section>
 
      <%-- table  --%>
-   <table style="width:80%; margin-left:100px;"  >
-       <tr>
+   <table style="width:90%; margin-left:100px;"  >
+       <tr style="background-color:darkgray">
            <br /><br /><br />
-       <td class="auto-style2">
+       <td style="width:60;" class="auto-style2">
+           <div style="margin-left:20px; width:80%;" >
         <formview style="align-content:flex-start; width:70%;">
-                <label>Bottle ID&nbsp&nbsp&nbsp&nbsp: </label>&nbsp&nbsp<input type="text" id="pdmBottleID" class="auto-style3"/><br /><br />
-                <label>Date : </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input value="" type="date" id="PdmBottledate" class="auto-style4"/><br /><br />
-                <label>Variety Code : </label>&nbsp&nbsp<input type="text" id="pdmVareityCode" class="auto-style5"/><br /><br />
-                <label>No of plants : </label>&nbsp&nbsp<input type="text" id="pdmNoOfPlnts" class="auto-style6"/><br /><br />
-                <label>operator Code : </label>&nbsp&nbsp<input type="text" id="pdmoperator" class="auto-style7"/><br /><br />
-                <input type="button"class="btn btn-dark" value="Update" style ="background-color:darkorange; width: 73px; margin-left: 157px;" /><input type="button" class="btn btn-dark"value="Delete" style ="background-color:coral; width: 66px; margin-left: 49px;"/> <br /><br />
-            </formview>
-        
+                <b>
+                <label>Bottle ID&nbsp&nbsp&nbsp&nbsp: </label>&nbsp&nbsp<asp:Textbox type="text" id="pdmBottleID" class="auto-style3" runat="server"/><br /><br />
+                <label>Date : </label>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<asp:Textbox id="upDate" type="text" runat="server"  class="auto-style10"/> <asp:Textbox  id="upMonth" type="text" class="auto-style10" runat="server" /><asp:Textbox id="upYear" type="text" class="auto-style10" runat="server" /> <br /><br />
+                <label>Variety Code : </label>&nbsp&nbsp<asp:Textbox id="pdmv" type="text"  class="auto-style5" runat="server" MaxLength="5" OnTextChanged="pdmv_TextChanged" ValidateRequestMode="Enabled" ViewStateMode="Enabled"/><br /><br />
+                <label>No of plants : </label>&nbsp&nbsp<asp:Textbox type="text" id="pdmNoOfPlnt" class="auto-style6" runat="server"/><br /><br />
+                <label>operator Code : </label>&nbsp&nbsp<asp:Textbox type="text" id="pdmoperators" class="auto-style7" runat="server"/><br /><br />
+                <asp:Button Text="Update" class="pdmb1" ID="up1"  runat="server" OnClick="up1_Click" /><asp:Button clss="pdmb2" Text="Delete" ID="del1" OnClick="del1_Click" runat="server"/> <br /><br />
+                </b>
+                    </formview>
+        </div>
            <td>
 
           <%-- verticle line--%>
-        <td class="auto-style1">
-            <center>
+        <td style="width:25; border-left:3px dashed; border-color:black" class="auto-style1">
+            
            
-               |<br />|<br /> |<br />|<br /> |<br />|<br /> |<br />|<br /> |<br />|<br /> |<br />|<br /> |<br />|  
-                </center>
+               
            </td>
                <%--bottle image--%>
-               <td>
-               <center>
-               <img src="../Image/download.jpg" /><br /><br /><br />
+               
+               <td style="width:30%; ">
+               
+                   <div style="margin-right:80px;">
+              <br />
+               <img src="../Image/download.jpg" /><br />
                     <%--description--%>
                    <p> A Roux bottle provides a large surface for the cells or microorganisms to grow, whether on the top of,[10] floating in,[11] or at the bottom of the medium.[12] The flat upper face then allows inspection of the culture and even illumination for photosynthetic organisms.[11] Organisms growing at the bottom of the medium can also be inspected from below, with an inverted microscope.[13]</p>
-                </center>
+                </div>
            </td>
            </tr>
     </table>
  <br /><br /><br /><br />
+        </div>
 </asp:Content>

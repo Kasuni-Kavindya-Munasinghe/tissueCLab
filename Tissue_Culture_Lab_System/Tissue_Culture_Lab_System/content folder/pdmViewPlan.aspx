@@ -9,35 +9,72 @@
             width: 204px;
         }
         .auto-style3 {
-            height: 17px;
+            height: 26px;
             margin-left: 0px;
         }
         .auto-style4 {
-            margin-left: 51px;
+            margin-left: 70px;
+            background-color:darkorange;
+            height:80px;
+            width:350px;
+            border-radius:8px;
         }
+
+        .create{
+             margin-left: 30px;
+            background-color:crimson;
+            height:80px;
+            width:350px;
+            border-radius:8px;
+           
+        }
+        .img1{
+            height:100px;
+            width:200px;
+             margin-left:30%;
+
+        }
+        .img2{
+            height:100px;
+            width:200px;
+            margin-left:30%;
+            
+        }
+        .create:hover {
+            opacity: 8;
+            color: black;
+            background-color: green;
+        }
+         .auto-style4:hover {
+            opacity: 8;
+            color: black;
+            background-color: green;
+        }
+     
+}
     </style>
 </asp:Content>
  
 <asp:Content ID="pdmContent7" ContentPlaceHolderID="pdmContentPlaceHolder7" runat="server">
-
+    <div style=" background-image:url(../Image/bg.jpg);">
     <section style ="background-color:darkslateblue">
         <center>
-        <h2>View And Create Plan</h2>
+        <h2 style="color:aliceblue" >View And Create Plan</h2>
             </center>
     </section>
     <br /><br />
 
-    <table style="width:80%;margin-left:100px;background-color:darkgray" class="auto-style2">
-        <tr>
+    <table style="width:80%;height:80%;margin-left:100px;background-color:darkgray" class="auto-style2">
+        <tr style="background-color:darkgray;height:100px;   ">
             <td style="width:50%;">
                   <center class="auto-style5">
                    <b>
-                 <label class="auto-style1">Enter Variety Code : </label>
-                <input type="text" id="planID" class="auto-style3"/><br /><br /><br />
-                      <button class="auto-style4"> View </button><br />
+               <br /><br />
+                      <asp:Button ID="planView"  class="create" Text="Manage Master Plan" runat="server" OnClick="planView_Click" />  <br />
                        
                       <br /><br />
-                      <img src="../Image/logo.png" />
+                     
+                  
                      </center>
              
                 <td class="auto-style6">
@@ -48,25 +85,24 @@
             </td>
             
             <td style="width:50%;">
-              <br /><br /><br />
-                <p class="auto-style4">  Tissue culture is increasing in popularity in both commercial and private sectors. Just a few years ago, the tissue culture technique was largely reserved for professional laboratories and large companies, while today, we see a diligent home grower able to enjoy the benefits of tissue culture propagation.
-
-Setting up your own tissue culture lab at home can initially seem challenging, but with to proper planning and preparation (and diligence), you can be well on your way to propagating many cultures   </p>
-                <br /><br />
-                
-                 <button style="background-color:darkorange;" class="auto-style2" >
-                     <b>
-                     Create Plan 
-                     </b>
-                 </button class="auto-style1"><br /><br />
+        
+              <br /><br /> <br /><br /><br />
+            <asp:Button ID="Button1" OnClick="pdmp1_Click" runat="server" Text=" Create Plan" class="auto-style4"> </asp:Button><br />
                 
             
-            <br /><br /><br /><br />
+            <br /><br />
+
+                
+                <br /><br/><br/>
             </td>
 
-        </tr>
+        </tr><tr style="height:100px"><td>  <img src="../Image/axall.gif" class="img1" /></td><td>
+
+             |<br />|<br /> |<br />|<br /> |<br />|<br /> |<br />|<br />
+                                               </td><td><img src="../Image/pln.gif" class="img2" /></td></tr><tr style="height:100px;"><td></td><td> |<br />|<br /> |<br />|<br /> |<br />|<br /> |<br />|<br /></td><td></td></tr>
         <br /><br />
 
     </table>
-    <br /><br />
+    <br /><br /><br /><br /><br /> <br /><br /><br />
+    </div>
 </asp:Content>
