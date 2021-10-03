@@ -1,24 +1,7 @@
-﻿body {
-}
-.footerlinks {
-    color: #ffffff;
-    text-decoration: none !important;
-}
-
-    .footerlinks:hover {
-        color: #000000;
-    }
-
-#footer1 {
-    background: #228B22;
-    position: fixed;
-    bottom: 40px;
-    left: 0;
-}
-
-#footer2 {
-    background: #008000;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+﻿/*DeliveryManagementDepartment(Karunarathna S.N.D)*/
+/*DeliveryHome.aspx CSS*/
+#blitzExams {
+    list-style-type: none;
+    padding: 30px 30px;
+    margin: 0;
 }
