@@ -5,22 +5,6 @@
 <html>
 <head runat="server">
     <title></title>
-    <%--External css--%>
-    <link href="css/StyleSheet.css" rel="stylesheet" />
-    <%--bootstrap css--%>
-    <link href="Boostrap/css/bootstrap.min.css" rel="stylesheet" />
-    <%--datatables css--%>
-    <link href="Datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
-    <%--fontawesome css--%>
-    <link href="fontawesome/css/all.css" rel="stylesheet" />
-
-   
-    <%--jquery--%>
-    <script src="Boostrap/js/bootstrap.bundle.min.js"></script>
-    <%--proper js--%>
-    <script src="Boostrap/js/popper.min.js"></script>
-    <%--bootstrap js--%>
-    <script src="Boostrap/js/bootstrap.min.js"></script>
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
@@ -29,10 +13,11 @@
     <form id="form1" runat="server">
         <!-- Main Content Placeholder -->
         <div>
+
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-        <!-- Main Content Placeholder -->
+
     </form>
 </body>
 </html>
