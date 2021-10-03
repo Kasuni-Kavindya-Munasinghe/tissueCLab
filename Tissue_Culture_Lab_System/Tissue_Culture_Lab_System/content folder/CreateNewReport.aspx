@@ -66,16 +66,7 @@
                                                                         </div>
                                                                 </td>
                                                             </tr>
-                                                            <!--
-                                                            <tr>
-                                                                <td > <label for="img">Select image </label>
-                                                                 <td style="width: 1018px">    
-                                                                    <asp:FileUpload onchange="readURL(this);" class="form-control" ID="FileUpload1" runat="server" Height="40px" Width="350px" />
-                                                                     
-                                                                 </td>
-                                                                    
-                                                            </tr>
-                                                            -->
+                                                           
 
                                                     <tr>
                                                         <td> &nbsp;</td>
